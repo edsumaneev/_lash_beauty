@@ -1,0 +1,58 @@
+{% set title = "Главная" %}
+{% include "../templates/header.njk" %}
+
+<header>
+  <div class="container header">
+    <div class="header__wrapper row">
+      <div class="hamburger">
+        <span></span>
+      </div>
+      <div class="col-xl-3">
+        <a href="#">
+          <img src="assets/img/icons/logo181x56.png" alt="logo" width="181" height="56">
+        </a>
+      </div>
+      <nav class="col-xl-7">
+        <ul class="row header__nav">
+          <li>
+            <a class="header__nav-item" href="#">Home</a>
+          </li>
+          <li>
+            <a class="header__nav-item" href="#aboutus">About Us</a>
+          </li>
+          <li>
+            <a class="header__nav-item" href="#portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a class="header__nav-item" href="#features">Features</a>
+          </li>
+          <li>
+            <a class="header__nav-item" href="#blog">Blog</a>
+          </li>
+          <li>
+            <a class="header__nav-item" href="#pricing">Pricing</a>
+          </li>
+          <li>
+            <a class="header__nav-item" href="#shortcodes">Shortcodes</a>
+          </li>
+          <li>
+            <a class="header__nav-item" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <div class="text-center mt-5 pt-5">
+    <h1>Bootstrap starter template</h1>
+    <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a
+      mostly barebones HTML document.</p>
+  </div>
+
+</main>
+
+
+{% include "../templates/footer.njk" %}
