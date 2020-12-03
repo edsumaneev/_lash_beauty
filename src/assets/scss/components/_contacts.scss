@@ -1,0 +1,31 @@
+.contacts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: rem(520px);
+
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 500;
+  font-size: rem(16px);
+  letter-spacing: 0.02em;
+}
+
+.contacts__tel {
+  display: inline-block;
+  margin-right: rem(27px);
+}
+
+.contacts__tel span {
+  margin-left: rem(5px);
+}
+
+.contacts__name {
+  color: #ffaabf;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.contacts__tel:hover span,
+.contacts__tel:hover {
+  color: rgba($color: red, $alpha: 0.7);
+}

@@ -1,0 +1,92 @@
+// START intro
+.intro__wrapper {
+  justify-content: space-between;
+
+  @media(max-width: $width-xl) {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+}
+
+.intro__text {
+  min-height: rem(620px);
+  margin-bottom: rem(112px);
+
+  background-image: url("../img/home/img-home-intro03@1x.png");
+  background-position: right;
+  background-repeat: no-repeat;
+
+  @media(max-width: $width-xl) {
+    margin-bottom: rem(20px);
+    width: 100%;
+    min-height: auto;
+    background-position: top;
+  }
+}
+
+.intro__img {
+  text-align: center;
+}
+
+.intro__bg-img {
+  object-fit: cover;
+
+  box-shadow: rem(60px) rem(67px) #2b2b2b,
+    rem(10px) rem(10px) rem(25px) rgba($color: #2b2b2b, $alpha: 0.5);
+
+  @media(max-width: $width-md) {
+    width: 100%;
+    box-shadow: none;
+  }
+}
+
+.intro__feedback {
+  margin-top: rem(80px);
+}
+
+// END intro
+
+// START advantage
+.advantage {
+  display: flex;
+  justify-content: center;
+}
+
+.advantage__video {
+  max-width: rem(635px);
+
+  color: #fff;
+  background: #2b2b2b;
+}
+
+// .advantage__right,
+// .advantage__left {
+//   max-width: rem(635px);
+// }
+
+.advantage__youtube {
+  height: 100%;
+  width: 100%;
+  background-image: url("../img/home/poster-advantage01.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.advantage__box {
+  display: flex;
+  padding: rem(28px);
+  align-items: center;
+  justify-content: center;
+
+  height: rem(390px);
+  width: rem(590px);
+
+  border: rem(2px) solid #ffaabf;
+}
+
+.advantage__question {
+  background: #f2f2f2;
+}
+
+// END advantage

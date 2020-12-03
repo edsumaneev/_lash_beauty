@@ -1,0 +1,26 @@
+.header {
+  padding-top: rem(90px);
+  margin-bottom: rem(105px);
+
+  justify-content: space-between;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__search {
+  display: flex;
+  align-items: center;
+}
+
+.header__search svg {
+  fill: rgba($color: #ffaabf, $alpha: 0.7);
+}
+
+.header__search:hover svg {
+  fill: rgba($color: red, $alpha: 0.7);
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+}

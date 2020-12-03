@@ -35,9 +35,11 @@ $font-weight: 400, $font-style: normal, $support-required: 'modern') {
     }
 }
 
-
-
-// @include font-face("HelveticaNeueCyr", "HelveticaNeueCyr-Roman", "../fonts/HelveticaNeueCyr-Roman", 400, "oldie");
-// @include font-face("HelveticaNeueCyr", "HelveticaNeueCyr-Light", "../fonts/HelveticaNeueCyr-Light", 300, "oldie");
-// @include font-face("HelveticaNeueCyr", "HelveticaNeueCyr-Black", "../fonts/HelveticaNeueCyr-Black", 900, "oldie");
-// @include font-face("HelveticaNeueCyr", "HelveticaNeueCyr-Bold", "../fonts/HelveticaNeueCyr-Bold", 700, "oldie");
+@include font-face("Gilroy", "Gilroy-Light", "../fonts/Gilroy-Light", 300, "oldie");
+@include font-face("Gilroy", "Gilroy-Regular", "../fonts/Gilroy-Regular", 400, "oldie");
+@include font-face("Gilroy", "Gilroy-Medium", "../fonts/Gilroy-Medium", 500, "oldie");
+@include font-face("PlayfairDisplay", "PlayfairDisplay-Regular", "../fonts/PlayfairDisplay-Regular", 400, "oldie");
+@include font-face("PlayfairDisplay", "PlayfairDisplay-Bold", "../fonts/PlayfairDisplay-Bold", 700, "oldie");
+@include font-face("PlayfairDisplay", "PlayfairDisplay-Black", "../fonts/PlayfairDisplay-Black", 900, "oldie");
+@include font-face("PlayfairDisplaySC", "PlayfairDisplaySC-Regular", "../fonts/playfairdisplaysc", 400, "oldie");
+@include font-face("PlayfairDisplaySC", "PlayfairDisplaySC-Bold", "../fonts/playfairdisplayscbold", 700, "oldie");

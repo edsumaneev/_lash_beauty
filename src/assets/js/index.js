@@ -1,11 +1,31 @@
 require('bootstrap');
 require('slick-carousel');
+// require('magnific-popup');
 
-// $('.hamburger').on('click', function (event) {
-//   event.preventDefault();
-//   $(this).toggleClass('active')
-// });
+(function () {
+    $('.hamburger').on('click', function (event) {
+      event.preventDefault();
+      $(this).toggleClass('active');
+      $('.nav__list').slideToggle(400);
+      $('body').toggleClass('is-modal');
+      $('#overlay').toggleClass('active');
+    });
 
+    $('#overlay, .nav__list li').on('click', function (event) {
+      if ($(window).innerWidth() < 992) {
+        $('.hamburger').removeClass('active');
+        $('.nav__list').slideUp(400);
+        $('body').removeClass('is-modal');
+        $('#overlay').removeClass('active');
+      }
+    });
+
+    // Type Iframe - видео Youtube (или Vimeo), карты Гугл или другой контент в iframe 
+    $('.advantage__youtube').magnificPopup({
+      type: 'iframe'
+    });
+
+})();
 // $('.slider').slick({
 //   slidesToShow: 1,
 //   infinite: true,
@@ -15,4 +35,3 @@ require('slick-carousel');
 //   dots: true,
 //   dotsClass: 'slider__dots'
 // });
-

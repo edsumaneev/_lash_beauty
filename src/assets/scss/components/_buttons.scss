@@ -1,0 +1,15 @@
+.button {
+  display: inline-block;
+  padding: rem(15px) rem(45px);
+
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+
+  border: rem(1.8px) solid transparent;
+}
+
+// .button__callback:hover,
+.button__cursos {
+  border: rem(1.8px) solid #2b2b2b;
+}
