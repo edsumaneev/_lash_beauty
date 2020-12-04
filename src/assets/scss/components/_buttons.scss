@@ -1,15 +1,34 @@
 .button {
   display: inline-block;
-  padding: rem(15px) rem(45px);
+  padding: rem(8px) rem(50px);
 
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
 
+  background-color: transparent;
   border: rem(1.8px) solid transparent;
 }
 
 // .button__callback:hover,
 .button__cursos {
   border: rem(1.8px) solid #2b2b2b;
+}
+.button__cursos:hover {
+  color: rgba($color: red, $alpha: 0.7);
+
+  background-color: rgba($color: #2b2b2b, $alpha: 0.1);
+  transition: ease-in-out 0.3s;
+}
+
+.button__cursos--white {
+  color: $white;
+
+  border: rem(1.8px) solid $white;
+}
+
+.button__cursos--white:hover {
+  color: rgba($color: $white, $alpha: 0.7);
+
+  background-color: rgba($color: $white, $alpha: 0.1);
 }
