@@ -3,6 +3,10 @@
   margin-bottom: rem(105px);
 
   justify-content: space-between;
+@media(max-width: $width-md) {
+  padding-top: rem(30px);
+  margin-bottom: rem(30px);
+}
 }
 
 .header__wrapper {

@@ -21,12 +21,19 @@
   transition: ease-in-out 0.3s;
 }
 
+.button__feedback {
+  padding-left: rem(80px);
+  padding-right: rem(80px);
+}
+
+.button__feedback,
 .button__cursos--white {
   color: $white;
 
   border: rem(1.8px) solid $white;
 }
 
+.button__feedback:hover,
 .button__cursos--white:hover {
   color: rgba($color: $white, $alpha: 0.7);
 

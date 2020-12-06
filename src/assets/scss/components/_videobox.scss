@@ -1,0 +1,65 @@
+.videobox {
+  display: flex;
+  padding: rem(28px);
+  align-items: center;
+  justify-content: center;
+
+  height: rem(390px);
+  max-width: rem(586px);
+  width: 100%;
+
+  border: rem(2px) solid #ffaabf;
+}
+
+.videobox__youtube {
+  display: inline-block;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+
+  background-image: url("../img/home/poster-advantage01.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+// .videobox__slideyoutube {}
+
+
+
+// -------------
+.reviews__video .slick-track {
+  display: flex;
+}
+
+// .reviews__video .slick-slide {
+//   margin: 0px 10px;
+// }
+
+// .slider {
+//   width: 50%;
+//   margin: 100px auto;
+// }
+
+
+// .slick-slide img {
+//   width: 100%;
+// }
+
+// .slick-prev:before,
+// .slick-next:before {
+//   color: black;
+// }
+
+
+// .slick-slide {
+//   transition: all ease-in-out .3s;
+//   opacity: .2;
+// }
+
+// .slick-active {
+//   opacity: .5;
+// }
+
+// .slick-current {
+//   opacity: 1;
+// }

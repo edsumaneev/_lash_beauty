@@ -64,27 +64,6 @@
   background-color: #2b2b2b;
   box-shadow: rem(10px) rem(10px) rem(25px) rgba($color: #2b2b2b, $alpha: 0.5);
 }
-.advantage__youtube {
-  height: 100%;
-  width: 100%;
-  background-image: url("../img/home/poster-advantage01.jpg");
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-}
-
-.advantage__videobox {
-  display: flex;
-  padding: rem(28px);
-  align-items: center;
-  justify-content: center;
-
-  height: rem(390px);
-  max-width: rem(590px);
-  width: 100%;
-
-  border: rem(2px) solid #ffaabf;
-}
-
 .advantage__content {
   display: flex;
   flex-direction: column;
@@ -168,6 +147,10 @@
   position: relative;
 
   margin-right: rem(25px);
+}
+
+.info__item:last-child {
+  margin-right: 0;
 }
 
 .info__inner {
@@ -315,3 +298,178 @@
 }
 
 //-- END slick
+// START reviews
+.reviews__wrapper {
+  margin-bottom: rem(190px);
+}
+
+.reviews__subtitle {
+  font-weight: 400;
+  font-size: rem(24px);
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.reviews__text {
+  background-image: url("../img/home/img-bg-reviews@1x.png");
+  background-position-x: center;
+  background-repeat: no-repeat;
+}
+
+.reviews__textblock {
+  margin-bottom: rem(45px);
+}
+
+.reviews__video {
+  width: 45%;
+  padding-left: 154px;
+  overflow: hidden;
+}
+
+.reviews__slider {
+  // display: flex;
+  height: 100%;
+  // min-width: rem(652px);
+}
+
+.reviews__slide {
+  display: block;
+  height: rem(366px);
+  width: auto;
+}
+
+// END reviews
+
+// START feedback
+.feedback {
+  padding: rem(90px) 0 rem(85px) 0;
+  margin-bottom: rem(74px);
+
+  background-color: #2b2b2b;
+  background-image: url("../img/home/img-bg-feedback01@1x.png"),
+    url("../img/home/img-bg-feedback02@1x.png");
+  background-repeat: no-repeat;
+  background-position: 2% bottom, 98% top;
+  box-shadow: 0 rem(15px) rem(25px) rgba($color: #2b2b2b, $alpha: 0.8);
+
+  @media(max-width: $width-xl) {
+    background-position: -30% bottom,
+      120% top;
+  }
+
+  @media(max-width: $width-md) {
+    background-image: none;
+  }
+}
+
+.feedback__wrapper {
+  text-align: center;
+}
+
+.feedback__title {
+  color: rgba($color: #ffaabf, $alpha: 0.7);
+  font-family: "PlayfairDisplaySC",
+    Arial,
+    sans-serif;
+  font-size: rem(74px);
+  font-weight: 400;
+  line-height: rem(80px);
+  letter-spacing: 0.04em;
+}
+
+.feedback__subtitle {
+  margin-bottom: rem(55px);
+
+  color: $white;
+  font-family: "PlayfairDisplay", Arial, sans-serif;
+  font-style: normal;
+  font-size: rem(74px);
+  font-weight: 700;
+  line-height: rem(80px);
+  letter-spacing: 0.04em;
+}
+
+.feedback__form {
+  max-width: rem(800px);
+  margin: 0 auto;
+}
+
+.feedback__form input[placeholder] {
+  padding: rem(30px) 0 rem(25px) 0;
+
+  background: transparent;
+  text-align: center;
+}
+
+.feedback__form input::placeholder {
+  color: $white;
+}
+
+.feedback__form input {
+  margin-bottom: rem(10px);
+  width: 100%;
+}
+
+.feedback__form input:focus,
+.feedback__form input:active,
+.feedback__form input {
+  color: $white;
+  text-align: left;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+}
+
+.feedback__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feedback__row input {
+  width: 45%;
+}
+
+.feedback__form input[type="checkbox"] {
+  display: none;
+}
+
+.feedback__agreement {
+  position: relative;
+  padding-left: rem(70px);
+  margin-top: rem(40px);
+  margin-bottom: rem(45px);
+
+  max-width: rem(480px);
+  color: $white;
+  line-height: rem(30px);
+}
+
+.feedback__link {
+  color: rgba($color: #ffaabf, $alpha: 0.7);
+}
+
+.feedback__link:hover {
+  color: rgba($color: #ffaabf, $alpha: 1.0);
+}
+
+.feedback__agreement:hover {
+  cursor: pointer;
+}
+
+.feedback__agreement::before {
+  content: "";
+  position: absolute;
+  top: rem(6px);
+  left: 0;
+  height: rem(18px);
+  width: rem(18px);
+
+  background-color: transparent;
+  border: rem(1.2px) solid rgba($color: $white, $alpha: 1.0);
+}
+
+.feedback__form input[type="checkbox"]:checked+label::before {
+  background-color: $white;
+}
+
+// END feedback

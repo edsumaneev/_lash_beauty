@@ -8,6 +8,11 @@
   font-weight: 500;
   font-size: rem(16px);
   letter-spacing: 0.02em;
+@media(max-width: $width-md) {
+  max-width: none;
+  width: 100%;
+  flex-direction: column;
+}
 }
 
 .contacts__tel {
@@ -28,4 +33,14 @@
 .contacts__tel:hover span,
 .contacts__tel:hover {
   color: rgba($color: red, $alpha: 0.7);
+}
+.contacts--footer {
+  align-items: center;
+  max-width: none;
+}
+
+.contacts--footer svg {
+  margin-top: rem(-2px);
+  margin-right: rem(5px);
+  fill: #ffaabf;
 }

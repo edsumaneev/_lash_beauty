@@ -1,0 +1,26 @@
+.social {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.social__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 rem(8px);
+
+  height: rem(40px);
+  width: rem(40px);
+
+  font-size: 0;
+  fill: #2b2b2b;
+  border: rem(1px) solid #ffaabf;
+  border-radius: 50%;
+}
+
+.social__item:hover {
+  fill: #ffaabf;
+  transition: ease-in-out 0.3s;
+  cursor: pointer;
+}
