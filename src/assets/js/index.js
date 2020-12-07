@@ -25,7 +25,7 @@ require('magnific-popup');
 
   // Type Iframe - видео Youtube (или Vimeo), карты Гугл или другой контент в iframe 
   $(document).ready(function () {
-        $('.videobox__youtube, .contacts__map').magnificPopup({
+        $('.videobox__youtube, .contacts__map, .videobox__videobutton').magnificPopup({
               disableOn: 700,
               type: 'iframe',
               mainClass: 'mfp-fade',
@@ -42,6 +42,7 @@ require('magnific-popup');
     autoplay: false,
     touchThreshold: 100,
     dots: true,
+    dotsClass: "reviews__dots",
     prevArrow: false,
     nextArrow: false
   });

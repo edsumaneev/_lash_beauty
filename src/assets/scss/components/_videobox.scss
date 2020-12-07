@@ -1,4 +1,5 @@
 .videobox {
+  position: relative;
   display: flex;
   padding: rem(28px);
   align-items: center;
@@ -22,15 +23,33 @@
   background-repeat: no-repeat;
 }
 
-// .videobox__slideyoutube {}
+.videobox__videobutton {
+  position: absolute;
+  // bottom: 50%;
+  top: 47%;
+  left: 40%;
+  right: 50%;
+  display: block;
+  width: rem(60px);
+  height: rem(60px);
 
+  font-size: 0;
+  background-image: url("../img/icons/videobutton-img.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  }
 
-
-// -------------
-.reviews__video .slick-track {
-  display: flex;
+.videobox__videobutton:hover {
+  transform: rotate(360deg);
+  transition: ease-in-out 0.8s;
 }
 
+.videobox__videobutton:active,
+.videobox__videobutton:focus {
+  outline: none;
+}
+
+// -------------
 // .reviews__video .slick-slide {
 //   margin: 0px 10px;
 // }
