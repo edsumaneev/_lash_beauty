@@ -9,7 +9,7 @@
 }
 
 .footer__bottom {
-  padding: rem(45px) 0;
+  padding: rem(37px) 0;
 
   color: $white;
   font-family: "Gilroy", Arial, sans-serif;
@@ -36,4 +36,11 @@
 .footer__wrapper {
   display: flex;
   justify-content: space-between;
+}
+.footer__linkcolor {
+  color: #ffaabf;
+}
+
+.footer__linkcolor:hover {
+  color: #f00;
 }

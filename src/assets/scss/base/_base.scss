@@ -17,6 +17,10 @@ body {
   letter-spacing: 0.02em;
 
   background-color: #fcfcfc;
+@media(max-width: $width-md) {
+  font-size: rem(16px);
+  line-height: auto;
+}
   }
 
   .container {
@@ -55,7 +59,7 @@ body {
     transition: ease-in-out 0.3s;
   }
 
-  #overlay {
+   #overlay {
     position: fixed;
     top: 0;
     left: 0;

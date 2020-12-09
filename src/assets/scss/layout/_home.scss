@@ -10,11 +10,12 @@
 }
 
 .intro__text {
+  width: 50%;
   min-height: rem(620px);
   margin-bottom: rem(112px);
 
   background-image: url("../img/home/img-home-intro03@1x.png");
-  background-position: right;
+  background-position: 110% bottom;
   background-repeat: no-repeat;
 
   @media(max-width: $width-xl) {
@@ -25,25 +26,42 @@
   }
 }
 
+.intro__description {
+  max-width: rem(585px);
+}
+
 .intro__img {
+  width: 50%;
   text-align: center;
+@media(max-width: $width-xl) {
+  margin-bottom: rem(20px);
+  }
 }
 
 .intro__bg-img {
-  object-fit: cover;
+  object-fit: contain;
 
-  box-shadow: rem(60px) rem(67px) #2b2b2b,
+  box-shadow: rem(60px) rem(67px) rem(3px) #2b2b2b,
     rem(10px) rem(10px) rem(25px) rgba($color: #2b2b2b, $alpha: 0.5);
+
+  @media(max-width: $width-xl) {
+    box-shadow: none;
+  }
 
   @media(max-width: $width-md) {
     width: 100%;
-    box-shadow: none;
+    height: auto;
   }
 }
 
 .intro__feedback {
   display: flex;
-  margin-top: rem(80px);
+  margin-top: rem(85px);
+
+  @media(max-width: $width-md) {
+    flex-direction: column;
+    margin-top: rem(35px);
+  }
 }
 
 // END intro
@@ -53,12 +71,12 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  margin-bottom: rem(297px);
+  margin-bottom: rem(273px);
 }
 
 .advantage__video {
   z-index: 5;
-  width: 50%;
+  width: 53%;
 
   color: #fff;
   background-color: #2b2b2b;
@@ -74,11 +92,13 @@
 }
 
 .advantage__colwrapper {
-  padding: rem(107px) 20% rem(65px) rem(132px);
+  padding: rem(107px) 20% rem(65px) rem(137px);
   background-color: #f2f2f2;
 }
 
 .advantage__colwrapper--white {
+  padding: rem(61px) 28.5% rem(65px) rem(71px);
+
   background-color: transparent;
 }
 
@@ -87,7 +107,7 @@
 }
 
 .advantage__colwrapper--black {
-  padding: rem(125px) rem(83px) rem(81px) 20%;
+  padding: 141px 92px 80px 27%;
   // max-width: rem(624px);
 
   background-color: transparent;
@@ -142,13 +162,76 @@
 }
 
 .advantage__text {
-  margin-bottom: rem(60px);
+  margin-bottom: rem(70px);
+  text-align: center;
+  }
+
+  .advantage__subtitle,
+  .advantage__titles {
+    padding-left: rem(20px);
+    margin-bottom: rem(75px);
+    font-family: "PlayfairDisplaySC", Arial, sans-serif;
+    font-weight: 700;
+    font-size: rem(36px);
+    line-height: 120%;
+    letter-spacing: 0.04em;
+    text-transform: lowercase;
+
+    text-shadow: 0 rem(4px) rem(4px) rgba(0, 0, 0, 0.25),
+      0 rem(4px) rem(4px) rgba(0, 0, 0, 0.25);
+  }
+
+  .advantage__titles--type1::first-letter {
+    font-size: rem(52px);
+    text-transform: uppercase;
+  }
+
+  .advantage__titles--type2 {
+    line-height: 100%;
+    margin-bottom: rem(26px);
+  }
+
+  .advantage__titles--type2 span {
+    font-size: (72px);
+  }
+
+  .advantage__subtitle {
+    position: relative;
+    display: inline-block;
+    margin-bottom: rem(14px);
+
+    font-family: "PlayfairDisplay",
+      Arial,
+      sans-serif;
+    font-size: rem(24px);
+    font-weight: 400;
+    text-transform: uppercase;
+
+    text-shadow: none;
+  }
+
+  .advantage__discr .advantage__subtitle {
+    padding-left: 0;
+  }
+
+  .advantage__subtitle::after {
+    position: absolute;
+    content: "";
+    bottom: rem(12px);
+    right: rem(-50px);
+    width: rem(30px);
+    height: rem(1px);
+    background-color: #ffaabf;
+  }
+
+  .advantage__form {
+    text-align: center;
 }
 
 // END advantage
 // START info
 .info {
-  margin-bottom: rem(97px);
+  margin-bottom: rem(76px);
   height: rem(611px);
   background-color: rgba($color: #ffaabf, $alpha: 0.1);
 }
@@ -162,6 +245,7 @@
   top: rem(-165px);
   display: flex;
   justify-content: center;
+  width: 100%;
 
   text-align: center;
 }
@@ -179,7 +263,7 @@
 .info__item {
   position: relative;
 
-  margin-right: rem(25px);
+  margin-right: rem(55px);
 }
 
 .info__item:last-child {
@@ -189,7 +273,7 @@
 .info__inner {
   position: absolute;
   top: rem(125px);
-  padding: 0 rem(100px) 0 rem(100px);
+  padding: 0 rem(75px);
 
   text-align: left;
 }
@@ -233,8 +317,8 @@
   flex-wrap: wrap;
   justify-content: flex-end;
   margin-left: auto;
-  margin-right: rem(70px);
-  width: 50%;
+  margin-right: rem(155px);
+  width: 45%;
   max-height: rem(600px);
 
   overflow: hidden;
@@ -261,7 +345,7 @@
 }
 
 .salon__text {
-  padding: rem(45px) 24% rem(55px) rem(73px);
+  padding: rem(60px) 27% rem(63px) rem(66px);
   color: #fff;
   background-color: #2b2b2b;
   box-shadow: 0 0 rem(25px) rgba($color: #2b2b2b, $alpha: 0.8);
@@ -302,7 +386,7 @@
   padding: rem(3px) rem(15px);
   position: absolute;
   content: "";
-  left: 47.5%;
+  left: 44.5%;
 
   font-size: 0;
   border: none;
@@ -333,6 +417,10 @@
   outline: none;
 }
 
+.slick-slide:not(.slick-active) {
+  opacity: 0.3;
+}
+
 //-- END slick
 // START reviews
 .reviews__wrapper {
@@ -349,7 +437,7 @@
 }
 
 .reviews__text {
-  // margin-right: 60px;
+  padding: rem(30px) 0 0 rem(7px);
   width: 50%;
 
   background-image: url("../img/home/img-bg-reviews@1x.png");
@@ -358,7 +446,7 @@
 }
 
 .reviews__textblock {
-  margin-bottom: rem(45px);
+  margin-bottom: rem(31px);
 }
 
 .reviews__video {
@@ -383,69 +471,78 @@
 .reviews__slide {
   position: relative;
   padding: rem(25px) 0;
+}
+
+.reviews__slide img {
+  box-shadow: 0 0 rem(20px) rgba($color: #2b2b2b, $alpha: 0.5);
+}
+
+.reviews__slider .slick-slide {
+  margin: 0 auto;
+}
+
+.reviews__dots {
+  position: absolute;
+  bottom: rem(15px);
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  padding: 0;
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+
+  font-size: 0;
+  width: 100%;
+  list-style: none;
+}
+
+.reviews__dots li {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0 rem(10px);
+
+  // width: rem(10px);
+  // height: rem(10px);
+
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+
+
+.reviews__dots li button {
+  display: inline-block;
+  vertical-align: middle;
+  color: transparent;
+
+  width: rem(10px);
+  height: rem(12px);
+  outline: none;
+  background-color: #ffaabf;
+  border: none;
+  border-radius: 50%;
+}
+
+.reviews__dots li.slick-active button {
+  width: rem(10px);
+  height: rem(18px);
+  border: rem(3px) solid #ffaabf;
+  background-color: rgba($color: #ffaabf, $alpha: 0.3);
   }
 
-  .reviews__slide img {
-    box-shadow: 0 0 rem(20px) rgba($color: #2b2b2b, $alpha: 0.5);
-  }
-
-  .reviews__slider .slick-slide {
-    margin: 0 auto;
-  }
-
-  .reviews__dots {
-    position: absolute;
-    bottom: rem(15px);
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    padding: 0;
-    padding-inline-start: 0;
-    margin-block-start: 0;
-    margin-block-end: 0;
-
-    font-size: 0;
-    width: 100%;
-    list-style: none;
-  }
-
-  .reviews__dots li {
-    display: inline-block;
-    vertical-align: middle;
-    padding: 0;
-    margin: 0 rem(10px);
-
-    width: rem(10px);
-    height: rem(10px);
-
-    border: none;
-    outline: none;
-    cursor: pointer;
-  }
-
-  .reviews__dots li button {
-    display: inline-block;
-    color: transparent;
-
-    width: rem(10px);
-    height: rem(12px);
-    outline: none;
-    background-color: #ffaabf;
-    border: none;
-    border-radius: 50%;
-  }
-
-  .reviews__dots li.slick-active button {
-    height: rem(18px);
-    border: rem(3px) solid #ffaabf;
-    background-color: rgba($color: #fff, $alpha: 0.7);
+  button::-moz-focus-inner {
+    padding: 0 !important;
+    border: 0 none !important;
 }
 
 // END reviews
 
 // START feedback
 .feedback {
-  padding: rem(90px) 0 rem(85px) 0;
+  padding: rem(93px) 0 rem(85px) 0;
   margin-bottom: rem(74px);
 
   background-color: #2b2b2b;
@@ -476,12 +573,12 @@
     sans-serif;
   font-size: rem(74px);
   font-weight: 400;
-  line-height: rem(80px);
+  line-height: rem(72px);
   letter-spacing: 0.04em;
 }
 
 .feedback__subtitle {
-  margin-bottom: rem(55px);
+  margin-bottom: rem(30px);
 
   color: $white;
   font-family: "PlayfairDisplay", Arial, sans-serif;
@@ -498,7 +595,7 @@
 }
 
 .feedback__form input[placeholder] {
-  padding: rem(30px) 0 rem(25px) 0;
+  padding: rem(30px) 0 rem(22px) 0;
 
   background: transparent;
   text-align: center;
@@ -538,11 +635,11 @@
 
 .feedback__agreement {
   position: relative;
-  padding-left: rem(70px);
-  margin-top: rem(40px);
+  padding-left: rem(40px);
+  margin-top: rem(33px);
   margin-bottom: rem(45px);
 
-  max-width: rem(480px);
+  max-width: rem(470px);
   color: $white;
   line-height: rem(30px);
 }
@@ -563,7 +660,7 @@
   content: "";
   position: absolute;
   top: rem(6px);
-  left: 0;
+  left: rem(-25px);
   height: rem(18px);
   width: rem(18px);
 

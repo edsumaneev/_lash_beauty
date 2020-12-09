@@ -20,9 +20,6 @@ require('magnific-popup');
       $('#overlay').removeClass('active');
     }
   });
-
-
-
   // Type Iframe - видео Youtube (или Vimeo), карты Гугл или другой контент в iframe 
   $(document).ready(function () {
         $('.videobox__youtube, .contacts__map, .videobox__videobutton').magnificPopup({
@@ -57,6 +54,15 @@ require('magnific-popup');
     dots: false,
     prevArrow: $(".slick-prev"),
     nextArrow: $(".slick-next")
+  });
+
+  $(document).ready(function () {
+
+    $(".header__iconsrch").click(function () {
+      $(".header__input").toggleClass("active");
+      $("input[type='search']").focus();
+    });
+
   });
 
 })();

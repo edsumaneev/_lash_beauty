@@ -5,15 +5,13 @@
   <section class="intro">
     <div class="container">
       <div class="row intro__wrapper">
-        <div class="intro__text col-12 col-xl-5">
+        <div class="intro__text col-12 col-xl-6">
           <h1 class="titles">Benvenuti</h1>
           <p class="titles titles__subtitle">nel&nbsp;nostro <span>mondo</span> </p>
-          <p>
+          <p class="intro__description">
             Siamo due socie Diana ed Alina che hanno deciso di aprire un studio esclusivo che
-            si concentra sul mondo delle extension e laminazione ciglia, insomma un mondo concentrato su uno
-            dei
-            nostri
-            punti più forti …gli OCCHI di tutti noi!
+            si concentra sul mondo delle extension e laminazione ciglia, insomma un mondo concentrato su uno dei nostri punti più
+            forti …gli OCCHI di tutti noi!
           </p>
           <div class="intro__feedback">
             <form action="#" method="POST">
@@ -26,7 +24,7 @@
             </a>
           </div>
         </div>
-        <div class="intro__img">
+        <div class="intro__img col-12 col-xl-6">
           <img class="intro__bg-img" src="assets/img/home/img-home-intro01@1x.jpg" width="546" height="546" alt="intro">
         </div>
       </div>
@@ -63,30 +61,30 @@
     <div class="advantage__content">
       <div class="advantage__colwrapper">
         <div class="advantage__coltop">
-          <p>
+          <p class="advantage__subtitle">
             Ventajas
           </p>
-          <h2>
+          <h2 class="advantage__titles advantage__titles--type1">
             Perchè scegliere Noi?
           </h2>
           <p class="advantage__text">
             Nella nostra sezione dei corsi troverete moltissime possibilità di imparare le varie tecniche nel
             mondo
-            dell’extension ciglia! Venite a scoprire i nostri corsi e scegliere quello che fa meglio a caso
+            dell’extension ciglia! Venite a scoprire i nostri corsi e scegliere quello che <br>fa meglio a caso
             Vostro!
           </p>
-          <form action="#" method="POST">
+          <form class="advantage__form" action="#" method="POST">
             <button class="button button__cursos" type="submit">Nuestros cursos</button>
           </form>
         </div>
       </div>
       <div class="advantage__colwrapper advantage__colwrapper--white">
-        <div class="advantage__di">
-          <p>
+        <div class="advantage__discr">
+          <p class="advantage__subtitle">
             Un pò di più su
           </p>
-          <h2>
-            di NOI...
+          <h2 class="titles advantage__titles--type2">
+            <span>di</span> NOI...
           </h2>
           <p>
             Ci sono moltissimi motivi per cui dovreste provare il nostro salone,
@@ -112,7 +110,7 @@
               ciglia!</p>
           </div>
           <form action="#" method="POST">
-            <button class="button button__cursos" type="submit">
+            <button class="button button__cursos button__cursos--width" type="submit">
               Frequentare corsi
             </button>
           </form>
@@ -287,12 +285,12 @@
 <footer>
   <div class="footer__top container">
     <nav class="nav nav__header">
-      <div class="nav__logo col-2">
+      <div class="nav__logo">
         <a href="#">
-          <img src="assets/img/icons/logo@1x.png" alt="logo" width="176" height="56">
+          <img src="assets/img/icons/logo@1x.png" alt="logo" width="240" height="70">
         </a>
       </div>
-      <ul class="nav__list nav__list--footer col-10">
+      <ul class="nav__list nav__list--footer">
         <li class="nav__item nav__item--footer">
           <a class="nav__link" href="#">Home</a>
         </li>
@@ -363,7 +361,7 @@
         </a>
       </li>
     </ul>
-    <div class="contacts contacts--footer col-10">
+    <div class="contacts contacts--footer">
       <a class="contacts__tel" href="tel:+393277590454">+ 39 (327) 759-04-54
         <span>
           <svg width="6" height="6" viewBox="0 0 6 6">
@@ -427,7 +425,7 @@
         </li>
       </ul>
       <p>
-        Sviluppato da <a href="#">Crazy Studio</a>
+        Sviluppato da <a class="footer__linkcolor" href="https://crazy.studio/">Crazy Studio</a>
       </p>
     </div>
   </div>
@@ -435,4 +433,3 @@
 
 
 {% include "../templates/footer.njk" %}
-<!-- <img src="assets/img/home/poster-reviews01.jpg" alt="" width="632" height="366"> -->
