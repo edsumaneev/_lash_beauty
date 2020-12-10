@@ -352,6 +352,10 @@
   }
 }
 
+.info__form {
+  text-align: center;
+}
+
 .info__item .button__cursos {
   @media(max-width: $width-xl) {
     margin-bottom: rem(25px);
