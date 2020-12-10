@@ -64,3 +64,15 @@
   margin-bottom: rem(30px);
 }
 }
+.titles--advantage {
+  line-height: 100%;
+  margin-bottom: rem(26px);
+}
+
+.titles--advantage span {
+  font-size: (72px);
+
+  @media(max-width: $width-md) {
+    font-size: rem(30px);
+  }
+}

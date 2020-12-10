@@ -73,7 +73,6 @@
 }
 
 // END intro
-
 // START advantage
 .advantage {
   display: flex;
@@ -252,7 +251,6 @@
   line-height: 100%;
   margin-bottom: rem(30px);
   padding-left: 0;
-  // text-align: center;
   }
 }
 
@@ -263,19 +261,6 @@
   font-size: rem(30px);
   }
 }
-
-.advantage__titles--type2 {
-  line-height: 100%;
-  margin-bottom: rem(26px);
-}
-
-.advantage__titles--type2 span {
-  font-size: (72px);
-@media(max-width: $width-md) {
-  font-size: rem(30px);
-  }
-}
-
 .advantage__subtitle {
   position: relative;
   display: inline-block;
@@ -736,10 +721,6 @@
   vertical-align: middle;
   padding: 0;
   margin: 0 rem(10px);
-
-  // width: rem(10px);
-  // height: rem(10px);
-
   border: none;
   outline: none;
   cursor: pointer;

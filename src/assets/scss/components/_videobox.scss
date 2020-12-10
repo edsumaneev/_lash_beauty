@@ -6,7 +6,6 @@
   justify-content: center;
 
   height: rem(424px);
-  // max-width: rem(586px);
   width: 100%;
 
   border: rem(2px) solid #ffaabf;
@@ -23,9 +22,8 @@
   background-repeat: no-repeat;
 }
 
-.videobox__videobutton {
+.videobox-button {
   position: absolute;
-  // bottom: 50%;
   top: 47%;
   left: 40%;
   right: 50%;
@@ -39,46 +37,12 @@
   background-position: 50% 50%;
   }
 
-.videobox__videobutton:hover {
+.videobox-button:hover {
   transform: rotate(360deg);
   transition: ease-in-out 0.8s;
 }
 
-.videobox__videobutton:active,
-.videobox__videobutton:focus {
+.videobox-button:active,
+.videobox-button:focus {
   outline: none;
 }
-
-// -------------
-// .reviews__video .slick-slide {
-//   margin: 0px 10px;
-// }
-
-// .slider {
-//   width: 50%;
-//   margin: 100px auto;
-// }
-
-
-// .slick-slide img {
-//   width: 100%;
-// }
-
-// .slick-prev:before,
-// .slick-next:before {
-//   color: black;
-// }
-
-
-// .slick-slide {
-//   transition: all ease-in-out .3s;
-//   opacity: .2;
-// }
-
-// .slick-active {
-//   opacity: .5;
-// }
-
-// .slick-current {
-//   opacity: 1;
-// }
