@@ -22,7 +22,7 @@ require('magnific-popup');
   });
   // Type Iframe - видео Youtube (или Vimeo), карты Гугл или другой контент в iframe 
   $(document).ready(function () {
-        $('.videobox__youtube, .contacts__map, .videobox__videobutton').magnificPopup({
+        $('.videobox__youtube, .contacts__map, .videobox-button').magnificPopup({
               disableOn: 700,
               type: 'iframe',
               mainClass: 'mfp-fade',
