@@ -2,6 +2,10 @@
   display: flex;
   justify-content: space-around;
   width: 100%;
+@media(max-width: $width-xl) {
+  justify-content: center;
+  margin-bottom: rem(20px);
+}
 }
 
 .social__item {
@@ -17,6 +21,9 @@
   fill: #2b2b2b;
   border: rem(1px) solid #ffaabf;
   border-radius: 50%;
+@media(max-width: $width-xl) {
+  margin: 0 rem(10px) rem(5px) rem(10px);
+}
 }
 
 .social__item:hover {

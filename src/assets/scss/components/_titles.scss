@@ -13,9 +13,14 @@
 
   color: rgba(255, 170, 191, 0.7);
 
+  @media(max-width: $width-xl) {
+    text-align: center;
+  }
+
   @media(max-width: $width-lg) {
     font-size: rem(68px);
     line-height: normal;
+    text-align: center;
   }
 
   @media(max-width: $width-md) {
@@ -55,4 +60,7 @@
 
 .titles--reviews {
   margin-bottom: rem(53px);
+@media(max-width: $width-xl) {
+  margin-bottom: rem(30px);
+}
 }

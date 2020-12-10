@@ -9,12 +9,19 @@
   font-weight: 500;
   font-size: rem(16px);
   letter-spacing: 0.02em;
+   @media(max-width: $width-xl) {
+     font-size: rem(14px);
+   }
+
   @media(max-width: $width-md) {
     margin-bottom: rem(10px);
     margin-right: 0;
     width: 100%;
     flex-direction: column;
   }
+@media(max-width: $width-sm) {
+  justify-content: center;
+}
 }
 
 .contacts__tel {
@@ -41,6 +48,13 @@
   margin-left: rem(77px);
   width: 100%;
   margin-right: 0;
+@media(max-width: $width-xl) {
+  margin-left: 0;
+}
+
+@media(max-width: $width-sm) {
+  align-items: baseline;
+}
 }
 
 .contacts--footer svg {
