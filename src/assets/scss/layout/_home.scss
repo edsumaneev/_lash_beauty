@@ -19,7 +19,8 @@
   background-repeat: no-repeat;
 
   @media(max-width: $width-xl) {
-    margin-bottom: rem(20px);
+    padding-bottom: rem(20px);
+    margin-bottom: 0;
     width: 100%;
     min-height: auto;
     background-position: top;
@@ -947,7 +948,10 @@ button::-moz-focus-inner {
 }
 
 .feedback__form input[type="checkbox"]:checked+label::before {
-  background-color: $white;
+  // background-color: $white;
+  background-image: url("../img/icons/icon-check.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 // END feedback
