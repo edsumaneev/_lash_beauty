@@ -49,7 +49,7 @@ jspm_packages/
 design/
 
 #compiled
-app/
+# app/
 
 # TypeScript v1 declaration files
 typings/
